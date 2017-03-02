@@ -1,0 +1,1 @@
+# aem-author-dispatcher-config-example
