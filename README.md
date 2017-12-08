@@ -1,33 +1,19 @@
-# AEM Hello World Author Dispatcher Config
+# AEM Hello World Author-Dispatcher
 
-## Content
+This is an example AEM Hello World artifact that will be deployed to an AEM Author-Dispatcher instance.
 
-This project includes the Apache Server configuration template, as well as the dispatcher configuration template.
+This artifact contains:
+* [Apache configuration template(s)](https://httpd.apache.org/docs/2.4/configuring.html) in `apache-conf-templates` directory
+* [AEM Dispatcher configuration template(s)](https://docs.adobe.com/docs/en/dispatcher/disp-config.html) in `dispatcher-conf-templates` directory
 
-Go to [AEM's dispatcher config page](https://docs.adobe.com/docs/en/dispatcher/disp-config.html) to learn more about it.
+Template files are written in [Embedded Puppet template syntax](https://docs.puppet.com/puppet/4.10/lang_template_epp.html).
 
-## Build
+## Usage
 
-To build the aem-author-dispatcher-config package, just run: 
+To create artifact zip file:
 
 ```
 make package
 ```
 
-This will create a stage folder which will contain a zip file with the following structure:
-
-```
-aem-author-dispatcher-config-{version number}
-│   README.md
-│   LICENCE    
-│   Makefile
-│
-└───apache-conf-templates
-│       httpd.conf.epp
-│   
-└───dispatcher-conf-templates
-        dispatcher.conf.epp
-        dispatcher.farms.any.epp
-```
-
-This package needs to be deployed on author-dispatcher instance.
+The artifact will be written at `stage/aem-helloworld-author-dispatcher-<version>.zip`
