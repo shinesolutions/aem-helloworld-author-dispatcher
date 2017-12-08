@@ -8,6 +8,6 @@ package:
 	    -x "*stage*" \
 	    -x "*.idea*" \
 	    -x "*.git*" \
-	    -X "stage/aem-author-dispatcher-config-$(version).zip" *
+	    -X "stage/aem-helloworld-author-dispatcher-$(version).zip" *
 
 .PHONY: package
