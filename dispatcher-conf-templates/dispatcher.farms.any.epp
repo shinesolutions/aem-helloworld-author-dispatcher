@@ -33,7 +33,7 @@
       /rend01
         {
         # Hostname or IP of the render
-         /hostname "<%= $author_host %>"
+         /hostname "<%= $facts[authorhost] %>"
         # Port of the render
         /port "<%= $author_port %>"
         # Connect timeout in milliseconds, 0 to wait indefinitely
