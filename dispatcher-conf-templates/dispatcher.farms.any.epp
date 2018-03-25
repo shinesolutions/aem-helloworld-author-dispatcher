@@ -33,12 +33,12 @@
       /rend01
         {
         # Hostname or IP of the render
-         /hostname "<%= $facts[authorhost] %>"
+         /hostname "<%= $author_host %>"
         # Port of the render
         /port "<%= $author_port %>"
         # Connect timeout in milliseconds, 0 to wait indefinitely
         # /timeout "0"
-        /secure "<%= $publish_secure %>"
+        /secure "<%= $author_secure %>"
         # Avoid caching IP in anticipation of instance recovery with a different IP
         /always-resolve "1"
         }
