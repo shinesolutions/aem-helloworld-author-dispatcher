@@ -1,5 +1,5 @@
 ### 0.10.2
-*
+* Modify build to use aem-platform-buildenv Docker image
 
 ### 0.10.1
 * Parameterise all configuration directories
