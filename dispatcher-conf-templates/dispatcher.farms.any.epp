@@ -109,11 +109,9 @@
 
       # Flag indicating whether to cache responses to requests that contain
       # authorization information.
-      # This needs to be set to "1" for an author instance, as all requests
-      # to an author instance contain authorization information.
-      # This means that the cache rules must never allow caching of content
-      # that contains user specific information.
-      /allowAuthorized "1"
+      # Setting this value to 0 means that the cache rules must never allow
+      # caching of content that contains user specific information.
+      /allowAuthorized "0"
 
       # Flag indicating whether the dispatcher should serve stale content if
       # no remote server is available.

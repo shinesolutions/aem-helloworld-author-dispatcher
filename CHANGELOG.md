@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Changed
+- Prevents all authenticated pages from being cached
+
 ## 0.10.2 - 2019-05-15
 ### Changed
 - Modify build to use aem-platform-buildenv Docker image
