@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Changed
+- Simplify Github workflows to not use action files
+
 ## 0.12.2 - 2021-10-05
 ### Fixed
 - Fix Publish GH Action broken make call
