@@ -16,7 +16,7 @@ jobs:
           ref: main
       - uses: cliffano/command-docker-action@v2.1.0
         with:
-          command: make clean deps package
+          command: make clean package
           image: shinesolutions/aem-platform-buildenv:6.4.1
           shell: bash
       - run: make publish
